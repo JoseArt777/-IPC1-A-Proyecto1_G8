@@ -16,7 +16,7 @@ const login = (req, res) => {
   if (user) {
     res.status(200).json(user);
   } else {
-    res.status(401).json({ message: 'Invalid email or password' });
+    res.status(401).json({ message: 'Correo electrónico o contraseña inválido' });
   }
 };
 
@@ -35,7 +35,7 @@ const rentMovie = (req, res) => {
     saveMovies(movies);
     res.status(200).json(movies[index]);
   } else {
-    res.status(404).json({ message: 'Movie not found or already rented' });
+    res.status(404).json({ message: 'La película no se encuentra o ya está alquilada' });
   }
 };
 
@@ -54,9 +54,9 @@ const returnMovie = (req, res) => {
     movies[index].alquiladoPor = null;
     movies[index].fechaAlquiler = null;
     saveMovies(movies);
-    res.status(200).json({ message: 'Movie returned', extraCharge });
+    res.status(200).json({ message: 'Película devuelta', extraCharge });
   } else {
-    res.status(404).json({ message: 'Movie not found or not rented by this user' });
+    res.status(404).json({ message: 'Película no encontrada o rentada por este usuario' });
   }
 };
 

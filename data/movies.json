@@ -1,14 +1,14 @@
 [
     {
       "id": "1",
-      "titulo": "Inception",
-      "sinopsis": "A mind-bending thriller",
+      "titulo": "Película ejemplo",
+      "sinopsis": "Este es el ejemplo del texto que debe contener a modo de sinopsis cada película que se agrega al catálogo de películas",
       "precioAlquiler": 10,
-      "director": "Christopher Nolan",
+      "director": "Aquí se agrega el nombre del director de la película",
       "añoEstreno": 2010,
       "duracion": 148,
       "genero": "Sci-Fi",
-      "imagen": "base64imagestring",
+      "imagen": "Aquí se agrega la portada que representa la película",
       "alquiladoPor": null,
       "fechaAlquiler": null
     }

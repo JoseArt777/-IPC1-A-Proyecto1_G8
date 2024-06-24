@@ -18,7 +18,7 @@ const updateMovie = (req, res) => {
     saveMovies(movies);
     res.status(200).json(movies[index]);
   } else {
-    res.status(404).json({ message: 'Movie not found' });
+    res.status(404).json({ message: 'Película no encontrada:' });
   }
 };
 
@@ -27,9 +27,9 @@ const deleteMovie = (req, res) => {
   const filteredMovies = movies.filter(movie => movie.id !== req.params.id);
   if (filteredMovies.length !== movies.length) {
     saveMovies(filteredMovies);
-    res.status(200).json({ message: 'Movie deleted' });
+    res.status(200).json({ message: 'Película eliminada' });
   } else {
-    res.status(404).json({ message: 'Movie not found' });
+    res.status(404).json({ message: 'La película no se encontró' });
   }
 };
 
@@ -38,9 +38,9 @@ const deleteUser = (req, res) => {
   const filteredUsers = users.filter(user => user.id !== req.params.id);
   if (filteredUsers.length !== users.length) {
     saveUsers(filteredUsers);
-    res.status(200).json({ message: 'User deleted' });
+    res.status(200).json({ message: 'Usuario eliminado' });
   } else {
-    res.status(404).json({ message: 'User not found' });
+    res.status(404).json({ message: 'Usuario no encontrando' });
   }
 };
 
