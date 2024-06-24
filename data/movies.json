@@ -1,0 +1,15 @@
+[
+    {
+      "id": "1",
+      "titulo": "Inception",
+      "sinopsis": "A mind-bending thriller",
+      "precioAlquiler": 10,
+      "director": "Christopher Nolan",
+      "añoEstreno": 2010,
+      "duracion": 148,
+      "genero": "Sci-Fi",
+      "imagen": "base64imagestring",
+      "alquiladoPor": null,
+      "fechaAlquiler": null
+    }
+  ]
